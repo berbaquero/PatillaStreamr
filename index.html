@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <title>Patilla Streamr</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="icons.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://connect.soundcloud.com/sdk.js"></script>
+        <script type="text/javascript" src="js/mustache.js"></script>
+
+        <link rel="shortcut icon" href="icon.png">
+    </head>
+
+    <body>
+
+        <div class="topbar">
+            <div class="topbar-inner">
+                <div class="container-fluid">
+                    
+                    <a class="brand" href="#">Patilla Streamr</a>
+
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a id="about" href="#about">About</a></li>
+                    </ul>
+                    <form>
+                        <input id="mainSearchField" class="span5" placeholder="Buscar aquí..." name="search">
+                        <button id="btnSearch" class="btn primary" type="button"><i class="icon-search icon-white"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="sidebar fixd">
+                <div id="player">
+                    <div id="nowPlaying"></div>
+                    <div id="songInfo"><p></p><p></p></div>
+                    <div id="controls">
+                        <button id="btnRewind" type="button" class="btn large info "><i class="icon-fast-backward icon-white icons"></i></button>
+                        <button id="btnPlay" type="button" class="btn large primary "><i id="playIcon" class="icon-play icon-white icons"></i></button>
+                        <button id="btnForward" type="button" class="btn large info "><i class="icon-fast-forward icon-white icons"></i></button>
+                    </div>
+                </div>
+                <div id="queue">
+                    
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="hero-unit">
+                    <h1>Hello, music-junkie!</h1>
+                    <p>Puedes comenzar buscando algún tema o artista en la barra de arriba. Disfruta :)</p>
+                </div>
+
+                <div id="artistsResults" class="oculta"></div>
+                
+                <div id="searchResults" class="oculta"></div>
+
+            </div>            
+        </div>
+        <script type="text/javascript" src="mainJS.js"></script>
+    </body>
+</html>

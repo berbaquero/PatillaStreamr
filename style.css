@@ -1,0 +1,171 @@
+body {
+    background-color: #E7E7DE;
+    padding-top: 60px;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    background-image: url("img/deskBG.png");
+}
+
+.sidebar.fixd {
+    position: fixed;
+    top: 60px;
+}
+
+#queue {
+    background-color: #F5F5F5;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px;
+}
+
+.oculta {
+    display: none;
+}
+
+#songInfo {
+    margin-top: 5px;
+}
+
+#songInfo p {
+    color: white;
+    margin-bottom: 0px;
+    padding-left: 5px;
+}
+
+.resultTitle {
+    color: #049CDB;
+}
+
+.resultArtist {
+    color: #999;
+}
+
+#timer {
+    display: inline;
+    margin-right: 5px;
+}
+
+#duration {
+    color: white;
+    margin-left: 5px;
+}
+
+#artistsResults {
+    margin-bottom: 15px;
+    border-radius: 6px 6px 6px 6px;
+    padding: 20px 20px 0 20px;
+    background-color: #F5F5F5;
+    overflow: auto;
+}
+
+#searchResults {
+    clear: both;    
+    background-color: #F5F5F5;
+    border-radius: 6px 6px 6px 6px;
+    overflow: auto;
+    padding: 10px 10px 0;
+    margin-bottom: 30px;
+}
+
+.artist {
+    width: 100px;
+    height: 160px;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 33px;
+}
+
+.artist p {
+    margin-top: 100px;
+}
+
+.track {
+    margin-bottom: 10px;
+    padding: 3px;
+    cursor: default;    
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    background-repeat: no-repeat;
+}
+
+.track p {
+    margin-left: 37px;
+    font-size: 17px;
+}
+
+.cover {
+    float: left;
+    padding-right: 10px;
+}
+
+.track:hover {
+    border-color: grey;
+    background-color: #BFDFF4;
+    border-radius: 5px;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+}
+
+.qLink {
+    float: right;
+}
+
+#btnSearch {
+    width: 70px;
+    outline: 0;
+}
+
+#btnPlay {
+    width: 38px;
+    border-radius: 90px;
+    outline: 0;
+}
+
+#btnForward {    
+    margin-left: 10px;
+    width: 38px;
+    border-radius: 90px;
+    outline: 0;
+}
+
+#btnRewind {
+    margin-right: 10px;
+    width: 38px;
+    border-radius: 90px;
+    outline: 0;
+}
+
+#status {
+    color: white;
+    font-size: 15px;
+}
+
+#player {
+    background-color: #404040;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+#nowPlaying {
+    width: 218px;
+    height: 218px;
+    background-size: 218px;
+    background-image: url('empty.png');
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+}
+
+#controls {
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.queued {
+    font-size: 11px;
+    border-bottom: 0.1px solid #E7E7DE;
+}
+
