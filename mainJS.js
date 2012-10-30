@@ -42,11 +42,6 @@ $(document).ready(function () {
         clearInterval(timerID);
     }
 
-    $("#about").click( function() {
-        $("div.hero-unit").fadeIn();
-        return false;
-    });
-
     $("#mainSearchField").keyup( function(e) {
         if(e.keyCode == 13) {
             mainSearch();
@@ -263,20 +258,10 @@ $(document).ready(function () {
     }
 
     // Sobre el tamaño dinámico de la sección de Queue / Playlist
-
-    var calculateQueueHeight = function() {
-        $("#queue").css("height", $(window).height() - $("#player").height() - 110);
-    }
-
-    $(window).on("resize", function(){
-        calculateQueueHeight();
-    });
     
     $("#queue").hover(function(){
         $(this).css("overflow-y", "auto");
     }, function(){
         $(this).css("overflow-y", "hidden");
     });
-
-    calculateQueueHeight();
 });
